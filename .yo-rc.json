@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Allan Swanepoel",
+      "authorEmail": "support@infrascloudy.io",
+      "authorUrl": "https://taiosolve.xyz"
+    }
+  }
+}
