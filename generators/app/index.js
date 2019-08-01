@@ -106,6 +106,10 @@ module.exports = class extends Generator {
       this.destinationPath(".eslintrc.json")
     );
     this.fs.copy(
+      this.templatePath("main.less"),
+      this.destinationPath("src/less/main.less")
+    );
+    this.fs.copy(
       this.templatePath("webpack.config.js"),
       this.destinationPath("webpack.config.js")
     );

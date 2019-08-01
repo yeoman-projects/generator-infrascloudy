@@ -8,8 +8,10 @@
   },
   "generator-infrascloudy": {
     "promptValues": {
-      "appName": "generator infrascloudy",
-      "userName": ""
+      "appName": "example",
+      "userName": "allan",
+      "email": "pea@nut.co",
+      "github": "allanice001"
     }
   }
 }
