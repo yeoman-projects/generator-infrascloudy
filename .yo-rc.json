@@ -5,5 +5,11 @@
       "authorEmail": "support@infrascloudy.io",
       "authorUrl": "https://taiosolve.xyz"
     }
+  },
+  "generator-infrascloudy": {
+    "promptValues": {
+      "appName": "generator infrascloudy",
+      "userName": ""
+    }
   }
 }

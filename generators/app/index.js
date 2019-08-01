@@ -2,6 +2,10 @@
 const Generator = require("yeoman-generator");
 const chalk = require("chalk");
 const yosay = require("yosay");
+const camelCase = require("lodash.camelcase");
+const capitalize = require("lodash.capitalize");
+const kebabCase = require("lodash.kebabcase");
+const snakeCase = require("lodash.snakecase");
 
 module.exports = class extends Generator {
   prompting() {
@@ -14,10 +18,29 @@ module.exports = class extends Generator {
 
     const prompts = [
       {
-        type: "confirm",
-        name: "someAnswer",
-        message: "Would you like to enable this option?",
-        default: true
+        type: "input",
+        name: "appName",
+        message: "What is the name of your project?",
+        default: this.appname,
+        store: true
+      },
+      {
+        type: "input",
+        name: "userName",
+        message: "What is your name? (Used for the package.json.)",
+        store: true
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email address? (Used for the package.json.)",
+        store: true
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "What is your GitHub user name? (Used for the package.json.)",
+        store: true
       }
     ];
 
