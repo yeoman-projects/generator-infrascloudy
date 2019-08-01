@@ -9,10 +9,10 @@ const snakeCase = require("lodash.snakecase");
 
 module.exports = class extends Generator {
   prompting() {
-    // Have Yeoman greet the user.
     this.log(
       yosay(
-        `Welcome·to·the·neat·${chalk.red("generator-infrascloudy")}·generator!`
+        `O! I hear you would like a minimalistic scaffold with a React front-end, a Flask back-end, a gulpfile, Webpack config, Less, and Mocha tests
+        Welcome·to·the·neat·${chalk.green("infrascloudy")}·generator!`
       )
     );
 
@@ -47,6 +47,14 @@ module.exports = class extends Generator {
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
       this.props = props;
+      this.kebabName = kebabCase(this.props.appName);
+      this.snakeName = snakeCase(this.props.appName);
+      this.pascalName = capitalize(camelCase(this.props.appName));
+      this.user = {
+        name: this.props.userName,
+        email: this.props.email,
+        github: this.props.github
+      };
     });
   }
 
