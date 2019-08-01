@@ -1,71 +1,37 @@
-# example
+# generator-infrascloudy [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> A generator to scaffold an app with a React front-end and Flask API
+## Installation
 
-Below you have instructions on how the skeleton project has been set up.
+First, install [Yeoman](http://yeoman.io) and generator-infrascloudy using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
-## Up and running
-
-First, install dependencies. The back-end is a simple Flask API, so you'll
-probably want to set up a virtual environment as well. These commands assume
-that you have [Python3](https://www.python.org/downloads/) and
-[Node.js](https://nodejs.org/en/) (with npm) installed.
-
-```
-pyvenv env
-source env/bin/activate
-pip install -r requirements.txt
-npm install
+```bash
+npm install -g yo
+npm install -g generator-infrascloudy
 ```
 
-Now that you have everything installed, you can build and run the app with one
-npm `run-script` command:
+Then generate your new project:
 
-```
-npm run app
-```
-
-This will compile the JavaScript modules and Less and start up the Flask API.
-
-## Running tests
-
-To run the tests, use the following commands. The first runs the Mocha
-test-suite for the JavaScript app. The second runs the Python unit tests for the
-API.
-
-```
-npm run test
-python api.py
+```bash
+yo infrascloudy
 ```
 
-You can also run the JavaScript tests in watch mode by passing an additional
-flag into the npm `run-script` command.
+## Getting To Know Yeoman
 
-```
-npm run test -- -w
-```
+ * Yeoman has a heart of gold.
+ * Yeoman is a person with feelings and opinions, but is very easy to work with.
+ * Yeoman can be too opinionated at times but is easily convinced not to be.
+ * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
-This enables that TDD sweetness, allowing you to focus on feeding the
-red-to-green beast.
+## License
 
-## Building individual pieces
+MIT © [Allan Swanepoel](https://taiosolve.xyz)
 
-There are also some npm scripts to make working with the JavaScript app nicer.
-These include compiling the app:
 
-```
-npm run compile
-```
-
-setting up watch-servers to re-compile the JS/CSS when you save changes:
-
-```
-npm run watch
-```
-
-building the production version of the app:
-
-```
-npm run prod
-```
-
-Under the hood, these are just aliases for gulp tasks, so pop open `gulpfile.js`
-if you want to see what's going on.
+[npm-image]: https://badge.fury.io/js/generator-infrascloudy.svg
+[npm-url]: https://npmjs.org/package/generator-infrascloudy
+[travis-image]: https://travis-ci.org/infrascloudy/generator-infrascloudy.svg?branch=master
+[travis-url]: https://travis-ci.org/infrascloudy/generator-infrascloudy
+[daviddm-image]: https://david-dm.org/infrascloudy/generator-infrascloudy.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/infrascloudy/generator-infrascloudy
+[coveralls-image]: https://coveralls.io/repos/infrascloudy/generator-infrascloudy/badge.svg
+[coveralls-url]: https://coveralls.io/r/infrascloudy/generator-infrascloudy
