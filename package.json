@@ -79,7 +79,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "test": "jest --collectCoverage"
   },
   "repository": "git@github.com:infrascloudy/cloud-migration.git",
   "license": "MIT"
