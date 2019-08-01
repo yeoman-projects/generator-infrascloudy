@@ -30,8 +30,8 @@ MIT © [Allan Swanepoel](https://taiosolve.xyz)
 
 [npm-image]: https://badge.fury.io/js/generator-infrascloudy.svg
 [npm-url]: https://npmjs.org/package/generator-infrascloudy
-[travis-image]: https://travis-ci.com/infrascloudy/generator-infrascloudy.svg?branch=master
-[travis-url]: https://travis-ci.com/infrascloudy/generator-infrascloudy
+[travis-image]: https://travis-ci.org/infrascloudy/generator-infrascloudy.svg?branch=master
+[travis-url]: https://travis-ci.org/infrascloudy/generator-infrascloudy
 [daviddm-image]: https://david-dm.org/infrascloudy/generator-infrascloudy.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/infrascloudy/generator-infrascloudy
 [coveralls-image]: https://coveralls.io/repos/infrascloudy/generator-infrascloudy/badge.svg
