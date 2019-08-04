@@ -110,5 +110,5 @@ bower_components/
 
 build/
 dist/
-
+static/
 # End of https://www.gitignore.io/api/web,node,yeoman
